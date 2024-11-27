@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <meta name="description" content="A git 'hands-on' tutorial using social links page application">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/icon.ico">
-  <link rel="stylesheet" href="index.css">
-  <title>Social links profile</title>
-</head>
-<body>
-  <main>
-    <img src="./assets/images/patrick-star.bmp" alt="profile-pic" class="profile-pic">
-    <h1>The Krusty Krab</h1>
-    <h2>Bikini Bottom</h2>
-    <p>Fast Food Restaurant</p>
-    <a href="todo"><b>GitHub</b></a>
-    <a href="todo"><b>LinkedIn</b></a>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A git 'hands-on' tutorial using social links page application"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/icon.ico"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Social Links Profile</title>
+  </head>
+  <body>
+    <main>
+      <img
+        src="./assets/images/patrick-star.bmp"
+        alt="profile-pic"
+        class="profile-pic"
+      />
+      <h1>The Krusty Krab</h1>
+      <h2>Bikini Bottom</h2>
+      <p>Fast Food Restaurant</p>
+
+      <h3>Social Links</h3>
+      <div id="social-links"></div>
+
+      <h3>Favorite Foods</h3>
+      <ul id="favorite-foods"></ul>
+
+      <button id="add-food-btn">Add Favorite Food</button>
+
+      <h3>Add a New Social Link</h3>
+      <form id="social-link-form">
+        <input
+          id="link-name"
+          class="input"
+          placeholder="Enter Link Name"
+          value="cat"
+          required
+        />
+        <input
+          id="link-url"
+          class="input"
+          placeholder="Enter Link URL"
+          value="food bad"
+          required
+        />
+        <input
+          id="link-last-name"
+          class="input"
+          value="food good"
+          placeholder="Enter Link Name"
+          required
+        />
+        <button id="form-button" type="submit">Add Link</button>
+      </form>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
 </html>
